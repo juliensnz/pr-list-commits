@@ -14,13 +14,15 @@ async function run() {
 
     const octokit = new github.GitHub(token);
 
-    const response = await octokit.pulls.get({
+    const response = await octokit.pulls.listCommits({
       owner: owner,
       repo: repo,
       pull_number: prNumber
     });
 
-    core.setOutput("branch", response.data.head.ref);
+    console.log(response);
+
+    core.setOutput("commits", response);
   } catch (error) {
     core.error(error);
     core.setFailed(error.message);

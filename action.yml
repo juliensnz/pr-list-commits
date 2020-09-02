@@ -1,5 +1,5 @@
-name: "PR Branch Name"
-description: "Sets the PR Branch Name for other steps"
+name: "PR List commits"
+description: "Sets the PR List commits for other steps"
 inputs:
   repo-token:
     description: "GITHUB_TOKEN secret"

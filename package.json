@@ -1,26 +1,26 @@
 {
-  "name": "pr-branch-name",
+  "name": "pr-list-commits",
   "version": "1.0.0",
-  "description": "Action that gets the branch name for the current pull request",
+  "description": "Action that gets the list of commits for the current pull request",
   "main": "index.js",
   "scripts": {
     "package": "npx ncc build src/main.js -o dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mdecoleman/pr-branch-name.git"
+    "url": "git+https://github.com/mdecoleman/pr-list-commits.git"
   },
   "keywords": [
     "github",
     "actions",
     "pull request",
-    "branch name"
+    "list commits"
   ],
   "bugs": {
-    "url": "https://github.com/mdecoleman/pr-branch-name/issues"
+    "url": "https://github.com/mdecoleman/pr-list-commits/issues"
   },
-  "homepage": "https://github.com/mdecoleman/pr-branch-name#readme",
-  "author": "Matthew Coleman <matthewdecoleman@gmail.com>",
+  "homepage": "https://github.com/mdecoleman/pr-list-commits#readme",
+  "author": "Julien Sanchez <juliens@nchez.fr>",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.0",
